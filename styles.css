@@ -1,0 +1,67 @@
+:root {
+    --clr-primary-red: hsl(0, 78%, 62%);
+    --clr-primary-cyan: hsl(180, 62%, 55%);
+    --clr-primary-orange: hsl(34, 97%, 64%);
+    --clr-primary-blue: hsl(212, 86%, 64%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(212, 6%, 44%);
+    --clr-neutral-500: hsl(234, 12%, 34%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9375rem;
+    background-color: var(--clr-neutral-100);
+    font-weight: 200;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr-neutral-400);
+}
+
+.title p {
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: var(--clr-neutral-400);
+}
+
+/* Layout */
+.wrapper {
+    width: min(100%, 320px);
+    margin: 65px auto 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .title {
+    outline: 1px solid blue;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.wrapper .card {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-top: 1px solid red;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.07), 4px 4px 8px rgba(0, 0, 0, 0.07);
+    padding: 30px 25px 50px;
+}
+
+.wrapper .card img {
+    display: block;
+    margin-left: auto;
+}
+
+
